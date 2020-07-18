@@ -91,19 +91,12 @@ Citizen.CreateThread(function()
 				toggle = true
 				SendNUIMessage({action = "toggleCar", show = true})
 			end
---			SendNUIMessage({action = "przesunHud", show = true})
 		else
 			idle = 500
 			if toggle == true then
 				toggle = false
 				SendNUIMessage({action = "toggleCar", show = false})
 			end
---			if not ZablokujPozycje then
---				if przesunalHud == false then
---					przesunalHud = true
---					SendNUIMessage({action = "przesunHud", show = true})
---				end
---			end
 		end
 		Citizen.Wait(idle)
 	end
@@ -122,24 +115,3 @@ Citizen.CreateThread(function()
 		end
 	end
 end)
-
-
-function nation_drawTxt(x,y ,width,height,scale, text, r,g,b,a, outline)
-    SetTextFont(0)
-    SetTextProportional(0)
-    SetTextScale(scale, scale)
-    SetTextColour(r, g, b, a)
-    SetTextDropShadow(0, 0, 0, 0,255)
-    SetTextEdge(1, 0, 0, 0, 255)
-    SetTextDropShadow()
-    if(outline)then
-	    SetTextOutline()
-	end
-    SetTextEntry("STRING")
-    AddTextComponentString(text)
-    DrawText(x - width/2, y - height/2 + 0.005)
-end
-
-
-
-
