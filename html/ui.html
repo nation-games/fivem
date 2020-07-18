@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nitro - Nation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+	<div id="ui">
+
+		<div class="carStats" style="display: none;">
+			<div class="meter" id="idmeter">
+				<div class="meter2" id="idmeter2">
+					<div class="speedometer">
+						<svg class="circle" width="50" height="50">
+							<circle class="outer" stroke="#FFFFFF" stroke-width="0.9" style="stroke-opacity: 0.2;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+							<circle class="backgroundCircle" stroke="#000" stroke-width="4.5" style="stroke-opacity: 0.5;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+							<circle class="progress progress-speed" stroke="url(#gradient)" stroke-width="4.5" style="stroke-opacity: 1;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+							<defs>
+								<linearGradient id="gradient">
+									<stop offset="30%" stop-color="#ff0000" />
+									<stop offset="100%" stop-color="#ff6600" />
+								</linearGradient>
+							</defs>
+						</svg>
+						<div class="text">
+							<span class="speed"></span>
+							<div class="kmh">NITRO</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

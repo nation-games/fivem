@@ -1,0 +1,124 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+.carStats{
+	display: none;
+	position: absolute;
+	font-family: 'Teko', sans-serif;
+    right: 12%;
+	bottom: 5.5%;
+	display: flex;
+    /*margin-left: 17.2%;*/
+}
+
+.carStats .stat span{
+	white-space: nowrap;
+	right: 20px;
+}
+
+.progress {
+	-webkit-transition: 0.35s stroke-dashoffset;
+	-o-transition: 0.35s stroke-dashoffset;
+	transition: 0.35s stroke-dashoffset;
+	-webkit-transform: rotate(140deg);
+	-ms-transform: rotate(140deg);
+	transform: rotate(140deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.backgroundCircle, .outer {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+  .meter {
+	height: 100%;
+	width: 100%; }
+
+  .meter .meter2 {
+    position: relative;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .meter .meter2 div {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px; }
+      .meter .meter2 div svg {
+        opacity: .2; }
+    .meter .meter2 .active svg {
+      opacity: .8; }
+
+  .meter .meter2 .speedometer {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	-webkit-clip-path: polygon(100% 45%, 80% 45%, 60% 100%, 0% 100%, 0% 0%, 100% 0%);
+	clip-path: polygon(100% 45%, 80% 45%, 60% 100%, 0% 100%, 0% 0%, 100% 0%); }
+	.meter .meter2 .speedometer svg {
+	  opacity: 1;
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  -webkit-transform: scale(2) translate(-25%, -25%);
+	  -ms-transform: scale(2) translate(-25%, -25%);
+	  transform: scale(2) translate(-25%, -25%); }
+	.meter .meter2 .speedometer .outer {
+	  opacity: .3;
+	  -webkit-transform: rotate(180deg) scale(1.2);
+	  -ms-transform: rotate(180deg) scale(1.2);
+	  transform: rotate(180deg) scale(1.2); }
+	.meter .meter2 .speedometer .text {
+	  width: 50%;
+	  height: 20%;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  margin: 0; 
+
+	}
+	  .meter .meter2 .speedometer .text .speed {
+		height: 150%;
+		font-size: 27px;
+		background: linear-gradient(to bottom, #ff3300 0%, #fdba00 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+		display: block; }
+	  .meter .meter2 .speedometer .text .kmh {
+		background: linear-gradient(to bottom, #0066ff 0%, #78fff8 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 16px;
+		filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+		display: block;
+		text-transform: uppercase; }
+
+
+
+  @keyframes animate {
+    0%
+    {
+      -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+    100%
+    {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+
