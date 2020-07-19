@@ -8,7 +8,7 @@
 
 ###### [2] - Coloque o script nation_nitro dentro da pasta resources de seu servidor e inicie ele pelo seu arquivo de configuração (server.cfg).
 
-###### [3] - Para conseguir instalar o nitro em algum veículo, você deve acionar o evento "nation:nitro" (client-side), utilizando as funções TriggerEvent, TriggerClientEvent ou TriggerServerEvent. Por padrão, o evento aciona uma função chamada func.takeNitro(), a qual checa se o player possui o item "nitronos" no inventário. Você pode facilmente alterar a função e modificar o item dentro do server.lua. Você deve definir quando o evento será acionado, seja através de um item usável, ou algum comando, etc... Seja criativo! 
+###### [3] - Para conseguir instalar o nitro em algum veículo, você deve acionar o evento "nation:nitro" (client-side), utilizando as funções TriggerEvent ou TriggerClientEvent. Por padrão, o evento aciona uma função chamada func.takeNitro(), a qual checa se o player possui o item "nitronos" no inventário. Você pode facilmente alterar a função e modificar o item dentro do server.lua. Você deve definir quando o evento será acionado, seja através de um item usável, ou algum comando, etc... Seja criativo! 
 
 ###### [4] - Com o nitro instalado no veículo, segure o "X" para ativá-lo.
 
